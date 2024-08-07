@@ -1,31 +1,208 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifetour — организация походов в горы.</title>
+  <link rel="preload" href="sass/style.scss" as="style">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicons/favicon.png">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <!-- <link rel="stylesheet" href="/vendor/nouislider/nouislider.css"> -->
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page__body">
+  <header class="header" data-test="header">
+      <!-- <div class="header__logo">
+        <a class="logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
+            <img class="logo__icon" src="images/logo/logo-mobile.svg" width="32" height="36" alt="Иконка логотипа.">
+          </picture>
+        </a>
+        <span class="header__logo-description">Интернет-магазин кофейных напитков</span>
+      </div>
+      <nav class="header__nav main-nav main-nav--closed">
+        <button class="main-nav__toggle js-toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list site">
+          <li class="main-nav__list-item main-nav__site-item site__item site__item--current">
+            <a class="site__link" title="Вы сейчас здесь">
+              <span class="site__text">Главная</span>
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__site-item site__item">
+            <a class="site__link" href="#catalog">
+              <span class="site__text">Каталог</span>
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__site-item site__item">
+            <a class="site__link" href="#">
+              <span class="site__text">Доставка</span>
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__site-item site__item">
+            <a class="site__link" href="#">
+              <span class="site__text">О нас</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list personalisation-list">
+          <li class="main-nav__list-item">
+            <a class="personalisation-list__link personalisation-list__link--login" href="#">
+              <span class="personalisation-list__link-text">Войти</span>
+            </a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="personalisation-list__link personalisation-list__link--basket" href="#">
+              <span class="personalisation-list__link-text">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav> -->
+  </header>
+
+  <main class="page-main">
+    <div class="hero" data-test="hero">
+      <ul>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+        <li>
+
+        </li>
+      </ul>
+    <!-- <h1>Захватывающие вершины Кавказа</h1> -->
+  </div>
+
+    <!-- <section class="about" data-test="about">
+      <div class="about-text-container">
+        <h2 class="about__title headline headline--h3">Тренажёрный зал</h2>
+        <span class="about__caption caption caption--small">Просторный зал площадью 900 кв/м</span>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+          есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="img/gym/general-desktop@1x.webp 1x, img/gym/general-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/gym/general-tablet@1x.webp 1x, img/gym/general-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/gym/general-mobile@1x.webp 1x, img/gym/general-mobile@2x.webp 2x">
+        <source type="image/jpeg" media="(min-width: 1366px)"
+          srcset="img/gym/general-desktop@1x.jpg 1x, img/gym/general-desktop@2x.jpg 2x">
+        <source type="image/jpeg" media="(min-width: 768px)"
+          srcset="img/gym/general-tablet@1x.jpg 1x, img/gym/general-tablet@2x.jpg 2x">
+        <img class="about__photo" src="img/gym/general-mobile@1x.jpg" width="320" height="280"
+          srcset="img/gym/general-mobile@2x.jpg 2x"
+          alt="Просторный светлый тренажёрный зал с большим количеством разнообразных тренажёров черно-красного цвета.">
+      </picture>
+      <div class="about__video video">
+        <div class="video__background-container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/gym/video-desktop@1x.webp 1x, img/gym/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/gym/video-tablet@1x.webp 1x, img/gym/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gym/video-mobile@1x.webp 1x, img/gym/video-mobile@2x.webp 2x">
+            <source type="image/jpeg" media="(min-width: 1366px)"
+              srcset="img/gym/video-desktop@1x.jpg 1x, img/gym/video-desktop@2x.jpg 2x">
+            <source type="image/jpeg" media="(min-width: 768px)"
+              srcset="img/gym/video-tablet@1x.jpg 1x, img/gym/video-tablet@2x.jpg 2x">
+            <img class="video__background" src="img/gym/video-mobile@1x.jpg" width="320" height="170"
+              srcset="img/gym/video-mobile@2x.jpg 2x"
+              alt="Тренажёрный зал с большим количеством спортивного оборудования.">
+          </picture>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Кнопка включения видео.</span>
+          </button>
+        </div>
+        <iframe width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=yOuFEYG4b5iNmG9z"
+          title="Бесплатные интерактивные онлайн-курсы."
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </section>
+    <section class="price" id="price" data-test="price">
+      <div class="price__container">
+        <h2 class="price__title headline headline--h3">Абонементы</h2>
+        <ul class="price__month-list month-list">
+          <li class="month-list__item">
+            <a class="month-list__tab-line month-list__tab-line--current">
+              <span class="month-list__text text text--tab-line">1 месяц</span>
+            </a>
+          </li>
+          <li class="month-list__item">
+            <a class="month-list__tab-line" href="#" disabled>
+              <span class="month-list__text text text--tab-line">6 месяцев</span>
+            </a>
+          </li>
+          <li class="month-list__item">
+            <a class="month-list__tab-line" href="#">
+              <span class="month-list__text text text--tab-line">12 месяцев</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="price__abonnements">
+          <li class="price__abonnement-card card">
+            <h3 class="card__title caption caption--bold">С тренером</h3>
+            <p class="card__text">12 занятий</p>
+            <p class="card__price number number--medium">
+              <span class="card__price-shadow number number--xlarge" aria-hidden="true">5000</span>
+              <span class="card__price-value">5000</span>
+              <span class="visually-hidden"> рублей.</span>
+            </p>
+            <a class="card__button button button--secondary" href="#">
+              <span class="card__button-text">Купить абонемент</span>
+            </a>
+          </li>
+          <li class="price__abonnement-card card">
+            <h3 class="card__title caption caption--bold">Дневной</h3>
+            <p class="card__text">с 8:00 до 17:00</p>
+            <p class="card__price number number--medium">
+              <span class="card__price-shadow number number--xlarge" aria-hidden="true">1700</span>
+              <span class="card__price-value">1700</span>
+              <span class="visually-hidden"> рублей.</span>
+            </p>
+            <a class="card__button button button--secondary" href="#">
+              <span class="card__button-text">Купить абонемент</span>
+            </a>
+          </li>
+          <li class="price__abonnement-card card">
+            <h3 class="card__title caption caption--bold">Полный день</h3>
+            <p class="card__text">с 8:00 до 22:00</p>
+            <p class="card__price number number--medium">
+              <span class="card__price-shadow number number--xlarge" aria-hidden="true">2700</span>
+              <span class="card__price-value">2700</span>
+              <span class="visually-hidden"> рублей.</span>
+            </p>
+            <a class="card__button button button--secondary" href="#">
+              <span class="card__button-text">Купить абонемент</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer" data-test="footer">
+
+  </footer>
+
+
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>

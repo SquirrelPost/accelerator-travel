@@ -1,0 +1,185 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  max-width: $mobile-width;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@mixin font-family {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+@mixin font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin h1 {
+  @include font(30px, 30px);
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    @include font(56px, 56px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(77px, 77px);
+  }
+}
+
+@mixin h2 {
+  @include font(26px, 26px);
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    @include font(40px, 40px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(55px, 55px);
+  }
+}
+
+@mixin h3 {
+  @include font(22px, 22px);
+  font-weight: 800;
+
+  @media (min-width: $tablet-width) {
+    @include font(25px, 25px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(35px, 35px);
+  }
+}
+
+@mixin h4 {
+  @include font(20px, 24px);
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include font(24px, 28px);
+  }
+}
+
+@mixin h5 {
+  @include font(16px, 16px);
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include font(18px, 18px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(21px, 21px);
+  }
+}
+
+@mixin h6 {
+  @include font(14px, 14px);
+  font-weight: 600;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 16px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(18px, 18px);
+  }
+}
+
+@mixin h7 {
+  @include font(14px, 16px);
+  font-weight: 700;
+}
+
+@mixin text-big {
+  @include font(15px, 20px);
+
+  @media (min-width: $tablet-width) {
+    @include font(17px, 24px);
+  }
+}
+
+@mixin text-regular {
+  @include font(14px, 20px);
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 24px);
+  }
+}
+
+@mixin text-small {
+  @include font(12px, 18px);
+
+  @media (min-width: $tablet-width) {
+    @include font(14px, 22px);
+  }
+}
+
+@mixin text-xsmall {
+  @media (min-width: $tablet-width) {
+    @include font(12px, 18px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font(12px, 16px);
+  }
+}
+
+@mixin caption-big {
+  @include font(12px, 12px);
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include font(13px, 13px);
+  }
+}
+
+@mixin caption-medium {
+  @include font(12px, 12px);
+  font-weight: 500;
+}
+
+@mixin caption-small {
+  @include font(12px, 12px);
+  font-weight: 300;
+}
+
+@mixin text-input {
+  @include font(14px, 14px);
+
+  @media (min-width: $desktop-width) {
+    @include font(16px, 16px);
+  }
+}
+
+@mixin button-big {
+  @include font(14px, 14px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  @media (min-width: $tablet-width) {
+    @include font(16px, 16px);
+  }
+}

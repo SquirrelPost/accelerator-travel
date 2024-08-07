@@ -1,4 +1,47 @@
-// Vendor
-// ---------------------------------
+/* COMMON */
+@import "./vendor/normalize";
+@import "./common/mixins";
+@import "./common/variables";
+@import "./common/global";
+@import "./common/fonts";
+@import "./common/visually-hidden";
 
-@import "vendor/normalize";
+/* BLOCKS */
+// @import "./blocks/header";
+
+// @import "./blocks/headline";
+// @import "./blocks/text";
+// @import "./blocks/caption";
+// @import "./blocks/button";
+// @import "./blocks/number";
+@import "./blocks/hero";
+// @import "./blocks/logo";
+// @import "./blocks/page";
+// @import "./blocks/page-main";
+// @import "./blocks/about";
+// @import "./blocks/video";
+// @import "./blocks/price.scss";
+// @import "./blocks/month-list.scss";
+// @import "./blocks/card.scss";
+
+
+// @import "./blocks/slider.scss";
+// @import "./blocks/badge.scss";
+// @import "./blocks/slider-pagination.scss";
+// @import "./blocks/slide-switch.scss";
+// @import "./blocks/price.scss";
+// @import "./blocks/advantages.scss";
+// @import "./blocks/catalog.scss";
+// @import "./blocks/label.scss";
+// @import "./blocks/filter.scss";
+// @import "./blocks/sorting.scss";
+// @import "./blocks/range.scss";
+// @import "./blocks/control.scss";
+// @import "./blocks/products.scss";
+// @import "./blocks/product-card.scss";
+// @import "./blocks/pagination.scss";
+// @import "./blocks/map.scss";
+// @import "./blocks/footer.scss";
+// @import "./blocks/social.scss";
+// @import "./blocks/contacts.scss";
+// @import "./blocks/copyright.scss";
