@@ -16,57 +16,57 @@
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="header" data-test="header">
-      <!-- <div class="header__logo">
-        <a class="logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
-            <img class="logo__icon" src="images/logo/logo-mobile.svg" width="32" height="36" alt="Иконка логотипа.">
-          </picture>
-        </a>
-        <span class="header__logo-description">Интернет-магазин кофейных напитков</span>
-      </div>
+    <div class="header__container">
+      <a class="header__logo logo">
+        <img class="logo__icon" src="img/logo.svg" width="142" height="42" alt="Иконка логотипа.">
+      </a>
       <nav class="header__nav main-nav main-nav--closed">
-        <button class="main-nav__toggle js-toggle-button" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
+          <svg class="main-nav__icon main-nav__icon--closed" aria-hidden="true">
+            <use href="/__spritemap#sprite-menu"></use>
+          </svg>
+          <svg class="main-nav__icon main-nav__icon--opened" aria-hidden="true">
+            <use href="/__spritemap#sprite-cross"></use>
+          </svg>
         </button>
         <ul class="main-nav__list site">
-          <li class="main-nav__list-item main-nav__site-item site__item site__item--current">
-            <a class="site__link" title="Вы сейчас здесь">
-              <span class="site__text">Главная</span>
+          <li class="main-nav__list-item site__item">
+            <a class="site__link site__link--dark-theme" href="#tours">
+              <span class="site__text">Туры</span>
             </a>
           </li>
-          <li class="main-nav__list-item main-nav__site-item site__item">
-            <a class="site__link" href="#catalog">
-              <span class="site__text">Каталог</span>
+          <li class="main-nav__list-item site__item">
+            <a class="site__link site__link--dark-theme" href="#education">
+              <span class="site__text">Обучение</span>
             </a>
           </li>
-          <li class="main-nav__list-item main-nav__site-item site__item">
-            <a class="site__link" href="#">
-              <span class="site__text">Доставка</span>
-            </a>
-          </li>
-          <li class="main-nav__list-item main-nav__site-item site__item">
-            <a class="site__link" href="#">
+          <li class="main-nav__list-item site__item">
+            <a class="site__link site__link--dark-theme" href="#about">
               <span class="site__text">О нас</span>
             </a>
           </li>
-        </ul>
-        <ul class="main-nav__list personalisation-list">
-          <li class="main-nav__list-item">
-            <a class="personalisation-list__link personalisation-list__link--login" href="#">
-              <span class="personalisation-list__link-text">Войти</span>
+          <li class="main-nav__list-item site__item">
+            <a class="site__link site__link--dark-theme" href="#reviews">
+              <span class="site__text">Отзывы</span>
             </a>
           </li>
-          <li class="main-nav__list-item">
-            <a class="personalisation-list__link personalisation-list__link--basket" href="#">
-              <span class="personalisation-list__link-text">Корзина</span>
+          <li class="main-nav__list-item site__item">
+            <a class="site__link site__link--dark-theme" href="#photos">
+              <span class="site__text">Фотографии</span>
+            </a>
+          </li>
+          <li class="main-nav__list-item site__item">
+            <a class="site__link site__link--dark-theme" href="#contacts">
+              <span class="site__text">Контакты</span>
             </a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
+      <a class="header__phone link link--dark-theme" href="tel:+78000000000">8 800 000-00-00</a>
+    </div>
   </header>
 
   <main class="page-main">
@@ -76,14 +76,13 @@
 
         </li>
         <li>
-
         </li>
         <li>
 
         </li>
       </ul>
-    <!-- <h1>Захватывающие вершины Кавказа</h1> -->
-  </div>
+      <!-- <h1>Захватывающие вершины Кавказа</h1> -->
+    </div>
 
     <!-- <section class="about" data-test="about">
       <div class="about-text-container">

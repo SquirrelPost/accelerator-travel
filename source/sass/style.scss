@@ -7,7 +7,14 @@
 @import "./common/visually-hidden";
 
 /* BLOCKS */
-// @import "./blocks/header";
+@import "./blocks/page";
+@import "./blocks/page-body";
+@import "./blocks/page-main";
+@import "./blocks/header";
+@import "./blocks/main-nav";
+@import "./blocks/site";
+@import "./blocks/logo";
+@import "./blocks/link";
 
 // @import "./blocks/headline";
 // @import "./blocks/text";
@@ -16,14 +23,12 @@
 // @import "./blocks/number";
 @import "./blocks/hero";
 // @import "./blocks/logo";
-// @import "./blocks/page";
-// @import "./blocks/page-main";
+
 // @import "./blocks/about";
 // @import "./blocks/video";
 // @import "./blocks/price.scss";
 // @import "./blocks/month-list.scss";
 // @import "./blocks/card.scss";
-
 
 // @import "./blocks/slider.scss";
 // @import "./blocks/badge.scss";

@@ -1,0 +1,43 @@
+.page-body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &--overlay {
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px;
+
+    @media (max-width: $tablet-width-only) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $overlay-menu;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      overflow: auto;
+      position: static;
+      margin-top: 0;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+    }
+  }
+}
