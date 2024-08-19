@@ -1,7 +1,7 @@
 /* COMMON */
 @import "./vendor/normalize";
-@import "./common/mixins";
-@import "./common/variables";
+@import "./mixins";
+@import "./variables";
 @import "./common/global";
 @import "./common/fonts";
 @import "./common/visually-hidden";
@@ -15,14 +15,9 @@
 @import "./blocks/site";
 @import "./blocks/logo";
 @import "./blocks/link";
-
-// @import "./blocks/headline";
-// @import "./blocks/text";
-// @import "./blocks/caption";
-// @import "./blocks/button";
-// @import "./blocks/number";
+@import "./blocks/button";
 @import "./blocks/hero";
-// @import "./blocks/logo";
+@import "./blocks/details";
 
 // @import "./blocks/about";
 // @import "./blocks/video";
@@ -32,7 +27,8 @@
 
 // @import "./blocks/slider.scss";
 // @import "./blocks/badge.scss";
-// @import "./blocks/slider-pagination.scss";
+@import "./blocks/swiper-pagination.scss";
+
 // @import "./blocks/slide-switch.scss";
 // @import "./blocks/price.scss";
 // @import "./blocks/advantages.scss";

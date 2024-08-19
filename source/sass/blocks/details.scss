@@ -1,0 +1,32 @@
+.details {
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+
+  @include list-reset;
+  display: flex;
+  gap: 11px;
+
+  span {
+    @include text-xsmall;
+  }
+}
+
+.details__item {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  border: 1px solid $white-opacity;
+  padding: 13px 19px 13px 39px;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  background-position: 19px center;
+
+  &--duration {
+    background-image: url("../img/sprite/moon.svg");
+  }
+
+  &--level {
+    background-image: url("../img/sprite/level.svg");
+  }
+}

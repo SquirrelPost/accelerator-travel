@@ -1,3 +1,256 @@
-.hero__title {
-  @include h1;
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 568px;
+  height: 100%;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+  }
+
+  h2 {
+    @include h2;
+    margin: 0 0 15px;
+
+    @media (min-width: $tablet-width) {
+      @include h1;
+      margin-bottom: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 23px;
+      max-width: 944px;
+    }
+  }
+
+  p {
+    @include text-big;
+    margin: 0 0 60px;
+    padding-inline: 3px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 500px;
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 464px;
+      margin-bottom: 37px;
+    }
+  }
+}
+
+.hero__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+}
+
+.hero__list {
+  @include list-reset;
+}
+
+.hero__item {
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: $base-white;
+  background-color: $color-disabled;
+  padding-bottom: 56px;
+  padding-top: 122px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 568px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 342px;
+    padding-bottom: 100px;
+    min-height: 1034px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 200px;
+    padding-right: 220px;
+    padding-bottom: 80px;
+    text-align: left;
+    min-height: 800px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: $overlay-big;
+  }
+
+  &--caucasus {
+    background-image: url("../img/hero/hero-caucasus-mobile@1x.jpg");
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 144px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-caucasus-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/hero/hero-caucasus-tablet@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-caucasus-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/hero/hero-caucasus-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-caucasus-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &--kamchatka {
+    background-image: url("../img/hero/hero-kamchatka-mobile@1x.jpg");
+    padding-top: 134px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-kamchatka-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/hero/hero-kamchatka-tablet@1x.jpg");
+      padding-top: 137px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-kamchatka-tablet@2x.jpg");
+      }
+
+      .hero__content {
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          transform: translateY(100%);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &::before {
+          left: 163px;
+          bottom: 35px;
+          width: 266px;
+          height: 351px;
+          background-image: url("../img/hero/photo-1-tablet@1x.png");
+
+          @media (min-resolution: 2dppx) {
+            background-image: url("../img/hero/photo-1-tablet@2x.png");
+          }
+        }
+
+        &::after {
+          right: 163px;
+          bottom: -18px;
+          width: 236px;
+          height: 312px;
+          background-image: url("../img/hero/photo-2-tablet@1x.png");
+
+          @media (min-resolution: 2dppx) {
+            background-image: url("../img/hero/photo-2-tablet@2x.png");
+          }
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/hero/hero-kamchatka-desktop@1x.jpg");
+      padding-top: 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-kamchatka-desktop@2x.jpg");
+      }
+
+      .hero__content {
+        &::before {
+          left: auto;
+          right: 0;
+          bottom: 126px;
+          transform: none;
+          width: 308px;
+          height: 407px;
+          background-image: url("../img/hero/photo-1-desktop@1x.png");
+
+          @media (min-resolution: 2dppx) {
+            background-image: url("../img/hero/photo-1-desktop@2x.png");
+          }
+        }
+
+        &::after {
+          right: -100px;
+          bottom: 74px;
+          transform: none;
+          width: 277px;
+          height: 366px;
+          background-image: url("../img/hero/photo-2-desktop@1x.png");
+
+          @media (min-resolution: 2dppx) {
+            background-image: url("../img/hero/photo-2-desktop@2x.png");
+          }
+        }
+      }
+    }
+  }
+
+  &--altai {
+    background-image: url("../img/hero/hero-altai-mobile@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-altai-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/hero/hero-altai-tablet@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-altai-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/hero/hero-altai-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-altai-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.hero__content {
+  @include container;
+  position: relative;
+}
+
+.hero__button {
+  max-width: 180px;
+  margin-bottom: 80px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
 }

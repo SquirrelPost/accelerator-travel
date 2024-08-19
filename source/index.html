@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lifetour — организация походов в горы.</title>
+  <title>Lifetour — ваш лучший поход в горы! Поможем организовать.</title>
   <link rel="preload" href="sass/style.scss" as="style">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
@@ -12,7 +12,6 @@
   <link rel="icon" type="image/png" href="favicons/favicon.png">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
-  <!-- <link rel="stylesheet" href="/vendor/nouislider/nouislider.css"> -->
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
@@ -39,7 +38,7 @@
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#education">
+            <a class="site__link site__link--dark-theme" href="#training">
               <span class="site__text">Обучение</span>
             </a>
           </li>
@@ -54,7 +53,7 @@
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#photos">
+            <a class="site__link site__link--dark-theme" href="#gallery">
               <span class="site__text">Фотографии</span>
             </a>
           </li>
@@ -70,136 +69,83 @@
   </header>
 
   <main class="page-main">
-    <div class="hero" data-test="hero">
-      <ul>
-        <li>
-
+    <section class="hero swiper" data-test="hero">
+      <h1 class="visually-hidden">Организация походов в горы.</h1>
+      <ul class="hero__list swiper-wrapper">
+        <li class="hero__item hero__item--caucasus swiper-slide">
+          <div class="hero__content">
+            <div class="hero__text-container">
+              <h2>Захватывающие вершины Кавказа</h2>
+              <p>В сопровождении опытных гидов
+                вы пройдёте через потрясающие
+                ландшафты и совершите восход
+                на вершину горы Чегет.</p>
+              <a class="hero__button button" href="#">
+                <span class="hero__button-text">Смотреть тур</span>
+              </a>
+            </div>
+            <ul class="hero__details details">
+              <li class="details__item details__item--duration">
+                <span>6 дней/5 ночей</span>
+              </li>
+              <li class="details__item details__item--level">
+                <span>Высокая сложность</span>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li>
+        <li class="hero__item hero__item--kamchatka swiper-slide">
+          <div class="hero__content">
+            <div class="hero__text-container">
+              <h2>Невероятная природа Камчатки</h2>
+              <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
+                уголков дикой природы в мире.</p>
+              <a class="hero__button button" href="#">
+                <span class="hero__button-text">Смотреть тур</span>
+              </a>
+            </div>
+            <ul class="hero__details details">
+              <li class="details__item details__item--duration">
+                <span>9 дней/10 ночей</span>
+              </li>
+              <li class="details__item details__item--level">
+                <span>Средняя сложность</span>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li>
-
+        <li class="hero__item hero__item--altai swiper-slide">
+          <div class="hero__content">
+            <div class="hero__text-container">
+              <h2>Магические пейзажи Алтайского Края</h2>
+              <p>Алтайский трекинг-тур — это&nbsp;захватывающее приключение с&nbsp;посещением магических
+                и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+              <a class="hero__button button" href="#">
+                <span class="hero__button-text">Смотреть тур</span>
+              </a>
+            </div>
+            <ul class="hero__details details">
+              <li class="details__item details__item--duration">
+                <span>8 дней/7 ночей</span>
+              </li>
+              <li class="details__item details__item--level">
+                <span>Лёгкая сложность</span>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
-      <!-- <h1>Захватывающие вершины Кавказа</h1> -->
-    </div>
-
-    <!-- <section class="about" data-test="about">
-      <div class="about-text-container">
-        <h2 class="about__title headline headline--h3">Тренажёрный зал</h2>
-        <span class="about__caption caption caption--small">Просторный зал площадью 900 кв/м</span>
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
-          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
-          есть несколько оборудованных залов для различных видов групповых занятий.</p>
-      </div>
-      <picture>
-        <source type="image/webp" media="(min-width: 1366px)"
-          srcset="img/gym/general-desktop@1x.webp 1x, img/gym/general-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/gym/general-tablet@1x.webp 1x, img/gym/general-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/gym/general-mobile@1x.webp 1x, img/gym/general-mobile@2x.webp 2x">
-        <source type="image/jpeg" media="(min-width: 1366px)"
-          srcset="img/gym/general-desktop@1x.jpg 1x, img/gym/general-desktop@2x.jpg 2x">
-        <source type="image/jpeg" media="(min-width: 768px)"
-          srcset="img/gym/general-tablet@1x.jpg 1x, img/gym/general-tablet@2x.jpg 2x">
-        <img class="about__photo" src="img/gym/general-mobile@1x.jpg" width="320" height="280"
-          srcset="img/gym/general-mobile@2x.jpg 2x"
-          alt="Просторный светлый тренажёрный зал с большим количеством разнообразных тренажёров черно-красного цвета.">
-      </picture>
-      <div class="about__video video">
-        <div class="video__background-container">
-          <picture>
-            <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/gym/video-desktop@1x.webp 1x, img/gym/video-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/gym/video-tablet@1x.webp 1x, img/gym/video-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/gym/video-mobile@1x.webp 1x, img/gym/video-mobile@2x.webp 2x">
-            <source type="image/jpeg" media="(min-width: 1366px)"
-              srcset="img/gym/video-desktop@1x.jpg 1x, img/gym/video-desktop@2x.jpg 2x">
-            <source type="image/jpeg" media="(min-width: 768px)"
-              srcset="img/gym/video-tablet@1x.jpg 1x, img/gym/video-tablet@2x.jpg 2x">
-            <img class="video__background" src="img/gym/video-mobile@1x.jpg" width="320" height="170"
-              srcset="img/gym/video-mobile@2x.jpg 2x"
-              alt="Тренажёрный зал с большим количеством спортивного оборудования.">
-          </picture>
-          <button class="video__button" type="button">
-            <span class="visually-hidden">Кнопка включения видео.</span>
-          </button>
-        </div>
-        <iframe width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=yOuFEYG4b5iNmG9z"
-          title="Бесплатные интерактивные онлайн-курсы."
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
-        </iframe>
-      </div>
+      <div class="hero__pagination swiper-pagination"></div>
     </section>
-    <section class="price" id="price" data-test="price">
-      <div class="price__container">
-        <h2 class="price__title headline headline--h3">Абонементы</h2>
-        <ul class="price__month-list month-list">
-          <li class="month-list__item">
-            <a class="month-list__tab-line month-list__tab-line--current">
-              <span class="month-list__text text text--tab-line">1 месяц</span>
-            </a>
-          </li>
-          <li class="month-list__item">
-            <a class="month-list__tab-line" href="#" disabled>
-              <span class="month-list__text text text--tab-line">6 месяцев</span>
-            </a>
-          </li>
-          <li class="month-list__item">
-            <a class="month-list__tab-line" href="#">
-              <span class="month-list__text text text--tab-line">12 месяцев</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="price__abonnements">
-          <li class="price__abonnement-card card">
-            <h3 class="card__title caption caption--bold">С тренером</h3>
-            <p class="card__text">12 занятий</p>
-            <p class="card__price number number--medium">
-              <span class="card__price-shadow number number--xlarge" aria-hidden="true">5000</span>
-              <span class="card__price-value">5000</span>
-              <span class="visually-hidden"> рублей.</span>
-            </p>
-            <a class="card__button button button--secondary" href="#">
-              <span class="card__button-text">Купить абонемент</span>
-            </a>
-          </li>
-          <li class="price__abonnement-card card">
-            <h3 class="card__title caption caption--bold">Дневной</h3>
-            <p class="card__text">с 8:00 до 17:00</p>
-            <p class="card__price number number--medium">
-              <span class="card__price-shadow number number--xlarge" aria-hidden="true">1700</span>
-              <span class="card__price-value">1700</span>
-              <span class="visually-hidden"> рублей.</span>
-            </p>
-            <a class="card__button button button--secondary" href="#">
-              <span class="card__button-text">Купить абонемент</span>
-            </a>
-          </li>
-          <li class="price__abonnement-card card">
-            <h3 class="card__title caption caption--bold">Полный день</h3>
-            <p class="card__text">с 8:00 до 22:00</p>
-            <p class="card__price number number--medium">
-              <span class="card__price-shadow number number--xlarge" aria-hidden="true">2700</span>
-              <span class="card__price-value">2700</span>
-              <span class="visually-hidden"> рублей.</span>
-            </p>
-            <a class="card__button button button--secondary" href="#">
-              <span class="card__button-text">Купить абонемент</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section> -->
+
+
+
+
   </main>
 
   <footer class="footer" data-test="footer">
 
   </footer>
-
 
   <script type="module" src="js/main.js"></script>
 </body>

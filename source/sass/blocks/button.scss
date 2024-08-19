@@ -2,86 +2,40 @@
   @include font-family;
   @include font(16px, 16px);
   font-weight: 500;
-  //   display: inline-flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   width: 100%;
-  //   text-decoration: none;
-  //   text-align: center;
-  //   border: 2px solid $base-white;
-  //   border-radius: 0;
-  //   background-color: transparent;
-  color: $base-primary;
-  //   padding: 22px;
-  //   cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: $base-secondary;
+  color: $base-white;
+  padding: 19px 20px;
+  cursor: pointer;
 
-  //   @media (min-width: $tablet-width) {
-  //     padding: 20px;
-  //   }
+  &:hover {
+    background-color: $base-white;
+    color: $base-active;
+    border-color: $base-active;
+  }
 
-  //   @media (min-width: $desktop-width) {
-  //     padding: 27px;
-  //   }
+  &:focus-visible {
+    background-color: $base-white;
+    color: $base-active;
+    border-color: transparent;
+  }
 
-  //   &:hover {
-  //     background-color: $base-white;
-  //     color: $base-secondary;
-  //   }
+  &:active {
+    background-color: $base-active;
+    color: $base-white;
+    border-color: transparent;
+  }
 
-  //   &:active {
-  //     background-color: $base-white;
-  //     color: $base-primary;
-  //   }
-
-  //   &:focus-visible {
-  //     background-color: $bg-opacity;
-  //     color: $base-secondary;
-  //     border-color: $base-black;
-  //   }
-
-  //   &:disabled {
-  //     opacity: 0.5;
-  //     pointer-events: none;
-  //     cursor: default;
-  //   }
-
-  //   // &--button-large {
-  //   //   @include font(14px, 14px);
-  //   // }
-
-  // &--big {
-  //   @include font(14px, 14px);
-  //   font-weight: 700;
-  //   text-transform: uppercase;
-  //   letter-spacing: 0.04em;
-
-  //   @media (min-width: $tablet-width) {
-  //     @include font(16px, 16px);
-  //   }
-
-    //     color: $base-primary;
-    //     border-color: $base-primary;
-
-    //     &:hover {
-    //       background: $gradient-button;
-    //       color: $base-white;
-    //       border-color: transparent;
-    //     }
-
-    //     &:active {
-    //       background: $gradient-button;
-    //       color: $text-opacity;
-    //       border-color: transparent;
-    //     }
-
-    //     &:focus-visible {
-    //       border-color: $base-black;
-    //       background: $gradient-button-extra;
-    //       color: $base-white;
-    //     }
-
-    //     &:disabled {
-    //       opacity: 0.3;
-    //     }
-  // }
+  &:disabled {
+    background-color: $color-disabled;
+    pointer-events: none;
+    cursor: default;
+  }
 }

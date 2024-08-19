@@ -62,11 +62,11 @@
 .header__phone {
   @include h6;
   justify-self: end;
-  padding-top: 3px;
+  margin-top: 3px;
   align-self: start;
   margin-bottom: -3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
+    margin-top: 15px;
   }
 }
