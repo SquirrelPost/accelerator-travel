@@ -64,12 +64,9 @@
   display: flex;
   text-align: center;
   color: $base-white;
-  background-color: $color-disabled;
+  background-color: $color-grey;
   padding-bottom: 56px;
   padding-top: 122px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   min-height: 568px;
 
   @media (min-width: $tablet-width) {
@@ -96,49 +93,17 @@
     background-image: $overlay-big;
   }
 
-  &--caucasus {
-    background-image: url("../img/hero/hero-caucasus-mobile@1x.jpg");
-
+  &--low-title {
     @media (max-width: $mobile-width-only) {
       padding-top: 144px;
     }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero-caucasus-mobile@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/hero/hero-caucasus-tablet@1x.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero-caucasus-tablet@2x.jpg");
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/hero/hero-caucasus-desktop@1x.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero-caucasus-desktop@2x.jpg");
-      }
-    }
   }
 
-  &--kamchatka {
-    background-image: url("../img/hero/hero-kamchatka-mobile@1x.jpg");
+  &--with-photo {
     padding-top: 134px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero-kamchatka-mobile@2x.jpg");
-    }
-
     @media (min-width: $tablet-width) {
-      background-image: url("../img/hero/hero-kamchatka-tablet@1x.jpg");
       padding-top: 137px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero-kamchatka-tablet@2x.jpg");
-      }
 
       .hero__content {
 
@@ -178,12 +143,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/hero/hero-kamchatka-desktop@1x.jpg");
       padding-top: 200px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero-kamchatka-desktop@2x.jpg");
-      }
 
       .hero__content {
         &::before {
@@ -215,30 +175,6 @@
       }
     }
   }
-
-  &--altai {
-    background-image: url("../img/hero/hero-altai-mobile@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero-altai-mobile@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/hero/hero-altai-tablet@1x.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero-altai-tablet@2x.jpg");
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/hero/hero-altai-desktop@1x.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero/hero-altai-desktop@2x.jpg");
-      }
-    }
-  }
 }
 
 .hero__content {
@@ -252,5 +188,76 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 134px;
+  }
+}
+
+.hero__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.hero__pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 88px;
+  width: 100%;
+  height: 16px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100px;
+    height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 92px;
+    left: auto;
+    right: 120px;
+    transform: none;
+  }
+
+  .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border: 1px solid $base-white;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      background-color: $color-grey;
+    }
+
+    &:active {
+      background-color: $white-opacity;
+    }
+
+    &:focus-visible {
+      background-color: transparent;
+      outline: 1px solid $white-opacity;
+      outline-offset: 1px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $base-white;
+    cursor: default;
+    pointer-events: none;
   }
 }

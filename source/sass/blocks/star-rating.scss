@@ -1,0 +1,19 @@
+.star-rating {
+  --var-width: 100%;
+  position: relative;
+  width: 84px;
+  height: 16px;
+  background-image: url("../img/sprite/stars-empty.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: var(--var-width);
+    background-image: url("../img/sprite/stars-full.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+}

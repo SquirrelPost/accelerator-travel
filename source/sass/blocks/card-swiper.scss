@@ -1,0 +1,68 @@
+.card-swiper {
+  position: relative;
+  width: 100%;
+}
+
+.card-swiper__buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+    top: -25px;
+    right: 0;
+    width: 78px;
+    height: 35px;
+  }
+}
+
+.card-swiper__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 35px;
+  background-color: $base-secondary;
+  color: $base-white;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $base-active;
+    color: $base-active;
+    background-color: transparent;
+  }
+
+  &:active {
+    border-color: transparent;
+    color: $base-white;
+    background-color: $base-active;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+    color: $base-active;
+    background-color: $base-white;
+  }
+
+  &.swiper-button-disabled {
+    opacity: 1;
+    background-color: $color-disabled;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &--next {
+    .card-swiper__button-icon {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+.card-swiper__button-icon {
+  width: 14px;
+  height: 9px;
+}
