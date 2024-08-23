@@ -36,11 +36,13 @@
     @media (min-width: $tablet-width) {
       max-width: 500px;
       margin-bottom: 38px;
+      padding-inline: 13px;
     }
 
     @media (min-width: $desktop-width) {
       max-width: 464px;
       margin-bottom: 37px;
+      padding-inline: 0;
     }
   }
 }
