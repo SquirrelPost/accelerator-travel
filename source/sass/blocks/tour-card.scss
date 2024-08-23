@@ -54,6 +54,7 @@
 
 .tour-card__place {
   @include caption-medium;
+
   display: flex;
   align-items: center;
   gap: 6px;
@@ -69,13 +70,14 @@
     background-image: url("../img/sprite/pin.svg");
     background-size: 9px 12px;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
   }
 }
 
 .tour-card__stats {
   @include list-reset;
   @include caption-medium;
+
   display: flex;
   gap: 14px;
 }
@@ -90,7 +92,7 @@
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
   }
 
   &--days::before {
@@ -106,6 +108,7 @@
 .tour-card__title {
   @include h4;
   @include font(24px, 28px);
+
   position: relative;
   padding-bottom: 16px;
   margin: 0;
@@ -133,7 +136,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    column-gap: 28px;
+    gap: 28px;
   }
 }
 
@@ -142,6 +145,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 4px;
+  flex-shrink: 0
 }
 
 .tour-card__feature {
@@ -151,5 +155,6 @@
 .tour-card__value {
   @include caption-big;
   @include font(13px, 13px);
+
   margin: 0;
 }

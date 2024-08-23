@@ -1,9 +1,4 @@
 .main-nav {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-
   &--closed {
     .main-nav__icon--closed {
       display: inline;
@@ -36,16 +31,7 @@
         margin-bottom: 58px;
       }
     }
-
-    //     .main-nav__list {
-    //       top: 65px;
-    //       z-index: 1;
-    //     }
   }
-
-  //   @media (min-width: $tablet-width) {
-  //     position: relative;
-  //   }
 }
 
 @media (max-width: $tablet-width-only) {
@@ -64,7 +50,6 @@
   background-color: transparent;
   padding: 0;
   cursor: pointer;
-  //   z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin-top: 8px;

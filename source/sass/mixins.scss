@@ -35,6 +35,7 @@
 
 @mixin h1 {
   @include font(30px, 30px);
+
   font-weight: 800;
 
   @media (min-width: $tablet-width) {
@@ -48,6 +49,7 @@
 
 @mixin h2 {
   @include font(26px, 26px);
+
   font-weight: 800;
 
   @media (min-width: $tablet-width) {
@@ -61,6 +63,7 @@
 
 @mixin h3 {
   @include font(22px, 22px);
+
   font-weight: 800;
 
   @media (min-width: $tablet-width) {
@@ -74,6 +77,7 @@
 
 @mixin h4 {
   @include font(20px, 24px);
+
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
@@ -83,6 +87,7 @@
 
 @mixin h5 {
   @include font(16px, 16px);
+
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
@@ -96,6 +101,7 @@
 
 @mixin h6 {
   @include font(14px, 14px);
+
   font-weight: 600;
 
   @media (min-width: $tablet-width) {
@@ -109,6 +115,7 @@
 
 @mixin h7 {
   @include font(14px, 16px);
+
   font-weight: 700;
 }
 
@@ -148,6 +155,7 @@
 
 @mixin caption-big {
   @include font(12px, 12px);
+
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
@@ -157,11 +165,13 @@
 
 @mixin caption-medium {
   @include font(12px, 12px);
+
   font-weight: 500;
 }
 
 @mixin caption-small {
   @include font(12px, 12px);
+
   font-weight: 300;
 }
 
@@ -175,6 +185,7 @@
 
 @mixin button-big {
   @include font(14px, 14px);
+
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -192,6 +203,7 @@
 
   &::after {
     @include h2;
+
     content: attr(data-title);
     position: absolute;
     bottom: 12px;

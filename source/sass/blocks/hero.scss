@@ -15,10 +15,12 @@
 
   h2 {
     @include h2;
+
     margin: 0 0 15px;
 
     @media (min-width: $tablet-width) {
       @include h1;
+
       margin-bottom: 13px;
     }
 
@@ -30,6 +32,7 @@
 
   p {
     @include text-big;
+
     margin: 0 0 60px;
     padding-inline: 3px;
 
@@ -108,7 +111,6 @@
       padding-top: 137px;
 
       .hero__content {
-
         &::before,
         &::after {
           content: "";
@@ -125,7 +127,7 @@
           height: 351px;
           background-image: url("../img/hero/photo-1-tablet@1x.png");
 
-          @media (min-resolution: 2dppx) {
+          @media (resolution >= 2dppx) {
             background-image: url("../img/hero/photo-1-tablet@2x.png");
           }
         }
@@ -137,7 +139,7 @@
           height: 312px;
           background-image: url("../img/hero/photo-2-tablet@1x.png");
 
-          @media (min-resolution: 2dppx) {
+          @media (resolution >= 2dppx) {
             background-image: url("../img/hero/photo-2-tablet@2x.png");
           }
         }
@@ -157,7 +159,7 @@
           height: 407px;
           background-image: url("../img/hero/photo-1-desktop@1x.png");
 
-          @media (min-resolution: 2dppx) {
+          @media (resolution >= 2dppx) {
             background-image: url("../img/hero/photo-1-desktop@2x.png");
           }
         }
@@ -170,7 +172,7 @@
           height: 366px;
           background-image: url("../img/hero/photo-2-desktop@1x.png");
 
-          @media (min-resolution: 2dppx) {
+          @media (resolution >= 2dppx) {
             background-image: url("../img/hero/photo-2-desktop@2x.png");
           }
         }
@@ -181,6 +183,7 @@
 
 .hero__content {
   @include container;
+
   position: relative;
 }
 

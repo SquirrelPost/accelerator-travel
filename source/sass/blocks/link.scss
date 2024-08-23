@@ -13,12 +13,6 @@
     color: $base-active;
   }
 
-  &.disabled {
-    pointer-events: none;
-    cursor: default;
-    color: $color-disabled;
-  }
-
   &--dark-theme {
     color: $base-white;
 
@@ -34,4 +28,10 @@
       color: $base-primary;
     }
   }
+}
+
+.link.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $color-disabled;
 }

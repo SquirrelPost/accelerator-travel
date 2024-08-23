@@ -1,5 +1,6 @@
 .site {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -15,8 +16,10 @@
 
   @media (min-width: $desktop-width) {
     @include text-input;
+
     flex-direction: row;
     gap: 21px;
+      margin-top: 3px;
   }
 }
 
@@ -31,18 +34,11 @@
   &[href]:active {
     color: $base-secondary;
     border-bottom-color: transparent;
-
   }
 
   &[href]:focus-visible {
     border-color: $base-primary;
     outline: none;
-  }
-
-  &.disabled {
-    pointer-events: none;
-    cursor: default;
-    color: $color-disabled;
   }
 
   &--dark-theme {
@@ -59,4 +55,10 @@
       border-color: $base-white;
     }
   }
+}
+
+.site__link.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $color-disabled;
 }

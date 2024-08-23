@@ -24,10 +24,10 @@
       <nav class="header__nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
-          <svg class="main-nav__icon main-nav__icon--closed" aria-hidden="true">
+          <svg class="main-nav__icon main-nav__icon--closed" aria-hidden="true" focusable="false" width="26" height="26">
             <use href="/__spritemap#sprite-menu"></use>
           </svg>
-          <svg class="main-nav__icon main-nav__icon--opened" aria-hidden="true">
+          <svg class="main-nav__icon main-nav__icon--opened" aria-hidden="true" focusable="false" width="26" height="26">
             <use href="/__spritemap#sprite-cross"></use>
           </svg>
         </button>
@@ -91,7 +91,7 @@
           <div class="hero__content">
             <div class="hero__text-container">
               <h2>Захватывающие вершины Кавказа</h2>
-              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+              <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на&nbsp;вершину
                 горы Чегет.</p>
               <a class="hero__button button" href="#">
                 <span class="hero__button-text">Смотреть тур</span>
@@ -349,12 +349,14 @@
           </div>
           <div class="card-swiper__buttons">
             <button class="card-swiper__button card-swiper__button--prev swiper-button-prev" type="button">
-              <svg class="card-swiper__button-icon" aria-hidden="true">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+              <svg class="card-swiper__button-icon" aria-hidden="true" focusable="false" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow-left"></use>
               </svg>
             </button>
             <button class="card-swiper__button card-swiper__button--next swiper-button-next" type="button">
-              <svg class="card-swiper__button-icon" aria-hidden="true">
+              <span class="visually-hidden">Следующий слайд.</span>
+              <svg class="card-swiper__button-icon" aria-hidden="true" focusable="false" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow-left"></use>
               </svg>
             </button>
@@ -362,7 +364,7 @@
         </div>
         <a class="tours__link" href="#">
           <span>Показать все туры</span>
-          <svg class="tours__link-icon" aria-hidden="true">
+          <svg class="tours__link-icon" aria-hidden="true" focusable="false" width="9" height="14">
             <use href="/__spritemap#sprite-arrow-right"></use>
           </svg>
         </a>
