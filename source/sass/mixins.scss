@@ -192,6 +192,8 @@
 }
 
 @mixin pseudo-title {
+  @include h3;
+
   position: relative;
   padding-top: 16px;
 
