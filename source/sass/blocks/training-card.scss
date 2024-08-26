@@ -1,0 +1,62 @@
+.training-card {
+  min-width: 290px;
+  min-height: 356px;
+  padding: 14px;
+  border: 1px solid $secondary-opacity-20;
+  background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    min-width: 213px;
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+    min-height: 356px;
+  }
+
+  h4 {
+    @include h7;
+    margin: 0;
+    padding-right: 24px;
+    max-width: min-content;
+  }
+
+  p {
+    @include text-xsmall;
+    margin: 0;
+  }
+}
+
+.training-card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.training-card__image {
+  display: block;
+  object-fit: cover;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+    width: 183px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+  }
+}
+
+.training-card__link {
+  position: absolute;
+  top: 215px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primary-opacity-30;
+}

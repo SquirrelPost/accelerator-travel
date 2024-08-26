@@ -35,6 +35,17 @@
   @media (min-width: $desktop-width) {
     top: -53px;
   }
+
+  &--lower {
+    @media (min-width: $tablet-width) {
+      top: 3px;
+      transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
 }
 
 .card-swiper__button {
@@ -72,15 +83,28 @@
     cursor: default;
     pointer-events: none;
   }
+}
 
-  &--next {
-    .card-swiper__button-icon {
-      transform: scaleX(-1);
-    }
+.card-swiper__title {
+  @include h3;
+  margin: 4px 0 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 6px 0 38px;
+    padding-right: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 4px 0 16px;
   }
 }
 
+.card-swiper__list {
+  @include list-reset;
+}
+
 .card-swiper__button-icon {
-  width: 14px;
-  height: 9px;
+  &--next {
+    transform: scaleX(-1);
+  }
 }

@@ -144,13 +144,7 @@
 }
 
 @mixin text-xsmall {
-  @media (min-width: $tablet-width) {
-    @include font(12px, 18px);
-  }
-
-  @media (min-width: $desktop-width) {
-    @include font(12px, 16px);
-  }
+  @include font(12px, 16px);
 }
 
 @mixin caption-big {

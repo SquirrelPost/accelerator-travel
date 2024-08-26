@@ -1,6 +1,5 @@
 .tours {
   position: relative;
-  overflow: hidden;
 
   &::after {
     content: "";
@@ -9,34 +8,34 @@
     right: 0;
     height: 595px;
     background-repeat: no-repeat;
-    background-image: url("../img/bg/bg-clouds-mobile@1x.png");
+    background-image: url("../img/bg/clouds-1-mobile@1x.png");
     background-position: left;
     background-size: cover;
     width: calc(50% - 19px);
     z-index: -1;
 
-    @media (resolution >= 2dppx) {
-      background-image: url("../img/bg/bg-clouds-mobile@2x.png");
+    @media (resolution >=2dppx) {
+      background-image: url("../img/bg/clouds-1-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) {
       top: -92px;
       height: 1630px;
       width: calc(50% + 41px);
-      background-image: url("../img/bg/bg-clouds-tablet@1x.png");
+      background-image: url("../img/bg/clouds-1-tablet@1x.png");
 
-      @media (resolution >= 2dppx) {
-        background-image: url("../img/bg/bg-clouds-tablet@2x.png");
+      @media (resolution >=2dppx) {
+        background-image: url("../img/bg/clouds-1-tablet@2x.png");
       }
     }
 
     @media (min-width: $desktop-width) {
       top: -126px;
       width: calc(50% - 118px);
-      background-image: url("../img/bg/bg-clouds-desktop@1x.png");
+      background-image: url("../img/bg/clouds-1-desktop@1x.png");
 
-      @media (resolution >= 2dppx) {
-        background-image: url("../img/bg/bg-clouds-desktop@2x.png");
+      @media (resolution >=2dppx) {
+        background-image: url("../img/bg/clouds-1-desktop@2x.png");
       }
     }
   }
@@ -79,10 +78,6 @@
   }
 }
 
-.tours__list {
-  @include list-reset;
-}
-
 .tours__link {
   @include button-big;
 
@@ -109,9 +104,4 @@
   .disabled {
     color: $color-disabled;
   }
-}
-
-.tours__link-icon {
-  width: 9px;
-  height: 14px;
 }

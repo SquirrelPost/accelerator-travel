@@ -1,0 +1,76 @@
+.training {
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 158px;
+      right: 0;
+      height: 280px;
+      background-repeat: no-repeat;
+      background-image: url("../img/bg/clouds-2@1x.png");
+      background-position: left;
+      background-size: cover;
+      width: calc(50% + 81px);
+      z-index: -1;
+
+      @media (resolution >=2dppx) {
+        background-image: url("../img/bg/clouds-2@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -4px;
+      width: calc(50% - 87px);
+    }
+  }
+}
+
+.training__wrapper {
+  @include container;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 58px;
+  }
+}
+
+.training__text-wrapper {
+  p {
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+      max-width: 820px;
+    }
+  }
+}
+
+.training__title {
+  @include h3;
+  @include pseudo-title;
+  margin: 0 0 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.training__education {
+  @media (max-width: $mobile-width-only) {
+    align-self: center;
+  }
+}

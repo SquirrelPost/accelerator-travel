@@ -1,0 +1,143 @@
+.education__title {
+  @include h5;
+  margin: 0 0 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.education__list {
+  @include list-reset;
+  position: relative;
+  padding-left: 29px;
+  display: grid;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    grid-template-columns: auto auto;
+    gap: 104px 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, min-content);
+    gap: 15px;
+    padding: 4px 10px 22px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 6px;
+    width: 2px;
+    height: calc(100% - 36px);
+    background-color: $base-secondary;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      left: 27px;
+      top: auto;
+      bottom: 12px;
+      height: 2px;
+      width: calc(100% - 27px);
+    }
+  }
+}
+
+.education__item {
+  position: relative;
+  padding-left: 34px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: top left;
+
+  @media (max-width: $tablet-width-only) {
+    @include text-small;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: top 2px left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -29px;
+    width: 14px;
+    height: 14px;
+    background-color: $base-secondary;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      left: 10px;
+      top: calc(100% + 2px);
+    }
+  }
+
+  &--map {
+    background-image: url("../img/sprite/map.svg");
+
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 0;
+    }
+  }
+
+  &--boot {
+    background-image: url("../img/sprite/boot.svg");
+  }
+
+  &--tree {
+    background-image: url("../img/sprite/pine-tree.svg");
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        left: -9px;
+      }
+    }
+  }
+
+  &--mountain {
+    background-image: url("../img/sprite/mountain.svg");
+
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 0;
+    }
+  }
+}
+
+.education__text {
+  display: block;
+  max-width: 201px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 203px;
+  }
+}
