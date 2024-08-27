@@ -1,20 +1,10 @@
 .card-swiper {
   position: relative;
   width: 100%;
-  max-width: 678px;
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-  }
 }
 
 .card-swiper__slider {
-  max-width: 678px;
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    max-width: 1200px;
-  }
 }
 
 .card-swiper__buttons {
@@ -44,6 +34,18 @@
 
     @media (min-width: $desktop-width) {
       top: 0;
+    }
+  }
+
+  &--with-shadow {
+    @media (min-width: $tablet-width) {
+      top: -10px;
+      right: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -28px;
+      right: 120px;
     }
   }
 }

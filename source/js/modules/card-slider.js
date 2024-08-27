@@ -13,7 +13,6 @@ const SliderVariables = {
     slidesPerViewDesktop: 3,
     spaceBetweenTablet: 18,
     spaceBetweenDesktop: 30,
-    initialSlide: 0,
     navButtonNext: '.tours__button--next',
     navButtonPrev: '.tours__button--prev',
   },
@@ -25,6 +24,14 @@ const SliderVariables = {
     initialSlide: 2,
     navButtonNext: '.training__button--next',
     navButtonPrev: '.training__button--prev',
+  },
+  'reviews-swiper': {
+    slidesPerViewTablet: 'auto',
+    slidesPerViewDesktop: 'auto',
+    spaceBetweenTablet: 30,
+    spaceBetweenDesktop: 120,
+    navButtonNext: '.reviews__button--next',
+    navButtonPrev: '.reviews__button--prev',
   },
 };
 
