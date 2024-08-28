@@ -1,0 +1,95 @@
+.adv-card {
+  border: 1px solid $secondary-opacity-20;
+  background-color: $base-white;
+  text-align: center;
+  max-width: 290px;
+  min-height: 257px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+    min-height: 329px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--safe {
+      min-height: 239px;
+    }
+
+    &--nature {
+      min-height: 253px;
+    }
+  }
+}
+
+.adv-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px 9px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 19px;
+  }
+
+  h3 {
+    @include h6;
+    margin: 0;
+    max-width: 249px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 255px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: max-content;
+    }
+  }
+
+  p {
+    @include text-small;
+    margin: 0;
+  }
+
+  h3+p {
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      margin-top: 14px;
+    }
+  }
+
+  p+p {
+    margin-top: 10px;
+  }
+}
+
+.adv-card__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+  border: 1px solid $base-secondary;
+  color: $base-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 30px;
+  }
+}

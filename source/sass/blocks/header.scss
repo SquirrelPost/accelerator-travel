@@ -71,4 +71,9 @@
   @media (min-width: $tablet-width) {
     margin-top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+    align-self: center;
+  }
 }

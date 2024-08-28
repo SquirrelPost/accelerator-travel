@@ -48,6 +48,18 @@
       right: 120px;
     }
   }
+
+  &--bottom {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      top: auto;
+      bottom: -50px;
+      left: 50%;
+      transform: translate(-50%, 100%);
+    }
+  }
 }
 
 .card-swiper__button {

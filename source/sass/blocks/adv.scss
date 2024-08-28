@@ -1,0 +1,92 @@
+.adv {
+  position: relative;
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 166px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 996px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../img/bg/clouds-3-tablet@1x.png");
+      z-index: -1;
+
+      @media (resolution >=2dppx) {
+        background-image: url("../img/bg/clouds-3-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -281px;
+      height: 447px;
+      background-image: url("../img/bg/clouds-3-desktop@1x.png");
+
+      @media (resolution >=2dppx) {
+        background-image: url("../img/bg/clouds-3-desktop@2x.png");
+      }
+    }
+  }
+}
+
+.adv__wrapper {
+  @include container;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0 185px;
+  }
+}
+
+.adv__title {
+  @include pseudo-title;
+  text-align: center;
+  margin: 0 0 36px;
+  padding-top: 22px;
+
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+    margin-bottom: 50px;
+
+    &::after {
+      bottom: 10px;
+    }
+  }
+}
+
+.adv__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

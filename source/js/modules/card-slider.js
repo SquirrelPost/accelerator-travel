@@ -41,6 +41,7 @@ const createCardSwipers = () => {
     const cardSwiper = new Swiper(value, {
       loop: false,
       slidesPerView: 1,
+      // slidesPerGroup: 1,
       initialSlide: 0,
       modules: [Navigation],
       navigation: {
