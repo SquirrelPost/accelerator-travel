@@ -948,8 +948,7 @@
                   <source type="image/jpeg" width="252" height="209" media="(min-width: 768px)"
                     srcset="img/gallery/photo-2-tablet@1x.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
                   <img class="photo-swiper__image" src="img/gallery/photo-2-mobile@1x.jpg" width="157" height="135"
-                    srcset="img/gallery/photo-2-mobile@2x.jpg 2x"
-                    alt="Большая компания сидит вокруг костра в лесу.">
+                    srcset="img/gallery/photo-2-mobile@2x.jpg 2x" alt="Большая компания сидит вокруг костра в лесу.">
                 </picture>
                 <picture>
                   <source type="image/webp" width="284" height="223" media="(min-width: 1440px)"
@@ -1035,8 +1034,7 @@
                   <source type="image/jpeg" width="253" height="418" media="(min-width: 768px)"
                     srcset="img/gallery/photo-7-tablet@1x.jpg 1x, img/gallery/photo-7-tablet@2x.jpg 2x">
                   <img class="photo-swiper__image" src="img/gallery/photo-7-mobile@1x.jpg" width="158" height="266"
-                    srcset="img/gallery/photo-7-mobile@2x.jpg 2x"
-                    alt="Два человека разводят огонь в лесу, виден дым.">
+                    srcset="img/gallery/photo-7-mobile@2x.jpg 2x" alt="Два человека разводят огонь в лесу, виден дым.">
                 </picture>
               </div>
             </li>
@@ -1059,6 +1057,30 @@
             </svg>
           </button>
         </div>
+      </div>
+    </section>
+    <section class="form-block" data-test="form">
+      <h2 class="visually-hidden">Форма обратной связи.</h2>
+      <div class="form-block__content">
+        <h3>Остались вопросы?</h3>
+        <p>Заполните форму и&nbsp;наш&nbsp;оператор свяжется с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post" novalidate>
+          <div class="form__wrapper">
+            <input class="form__field" type="tel" id="phone" name="phone" placeholder="+7 (000)-000-00-00" required>
+            <label class="form__label" for="phone">
+              <span class="form__label-text">Телефон</span>
+            </label>
+          </div>
+          <div class="form__wrapper">
+            <input class="form__field" type="text" id="email" name="email" placeholder="example@mail.ru" required>
+            <label class="form__label" for="email">
+              <span class="form__label-text">Email</span>
+            </label>
+          </div>
+          <button class="form__button button" type="submit">
+            <span class="form__button-text">Отправить</span>
+          </button>
+        </form>
       </div>
     </section>
 

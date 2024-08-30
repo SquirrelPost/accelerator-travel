@@ -169,7 +169,7 @@
   font-weight: 300;
 }
 
-@mixin text-input {
+@mixin text-nav {
   @include font(14px, 14px);
 
   @media (min-width: $desktop-width) {

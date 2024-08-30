@@ -6,22 +6,24 @@ let activePaginationButton;
 
 const removeFocusFromPaginationButton = () => {
   activePaginationButton = document.querySelector('.swiper-pagination-bullet-active');
-  activePaginationButton.setAttribute('tabindex','-1');
+  activePaginationButton.setAttribute('tabindex', '-1');
   activePaginationButton.blur();
 };
 
-const heroSwiper = new Swiper('.hero', {
-  loop: true,
-  modules: [Pagination],
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    bulletElement: 'button type="button"',
-  },
-});
-heroSwiper.on('slideChange', () => {
-  removeFocusFromPaginationButton();
-});
+const createHeroSwiper = () => {
+  const heroSwiper = new Swiper('.hero', {
+    loop: true,
+    modules: [Pagination],
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      bulletElement: 'button type="button"',
+    },
+  });
+  heroSwiper.on('slideChange', () => {
+    removeFocusFromPaginationButton();
+  });
+  heroSwiper.init();
+};
 
-
-export { heroSwiper };
+export { createHeroSwiper };

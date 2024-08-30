@@ -21,6 +21,7 @@ const createPhotoSwiper = () => {
         spaceBetween: 5,
       },
       1440: {
+        enabled: false,
         slidesPerView: 5,
         spaceBetween: 4,
       },

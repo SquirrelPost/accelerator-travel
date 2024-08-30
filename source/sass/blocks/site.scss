@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include text-input;
+    @include text-nav;
 
     flex-direction: row;
     gap: 21px;
