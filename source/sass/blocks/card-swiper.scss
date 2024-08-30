@@ -60,6 +60,17 @@
       transform: translate(-50%, 100%);
     }
   }
+
+  &--lower {
+    @media (min-width: $tablet-width) {
+      top: -21px;
+      right: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .card-swiper__button {
