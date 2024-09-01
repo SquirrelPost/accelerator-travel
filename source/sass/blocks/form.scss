@@ -24,6 +24,7 @@
 }
 
 .form__label {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -36,7 +37,7 @@
 
   @media (min-width: $tablet-width) {
     left: 30px;
-    width: calc(100% - 30px);
+    width: calc(100% - 40px);
   }
 }
 
@@ -82,6 +83,10 @@
     &:focus {
       border-color: $color-error;
     }
+  }
+
+  &[value=""]+.form__label {
+    display: block;
   }
 
   &:focus+.form__label {
