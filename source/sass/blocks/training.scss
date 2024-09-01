@@ -15,7 +15,7 @@
       width: calc(50% + 81px);
       z-index: -1;
 
-      @media (resolution >=2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../img/bg/clouds-2@2x.png");
       }
     }
@@ -29,6 +29,7 @@
 
 .training__wrapper {
   @include container;
+
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -57,6 +58,7 @@
 
 .training__title {
   @include pseudo-title;
+
   margin: 0 0 34px;
 
   @media (min-width: $tablet-width) {

@@ -59,6 +59,7 @@
 
   p {
     @include text-small;
+
     margin: 0;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -66,15 +67,15 @@
     }
   }
 
-  p+p {
+  p + p {
     margin-top: 10px;
   }
 
-  p+h3 {
+  p + h3 {
     margin-top: auto;
   }
 
-  h3+span {
+  h3 + span {
     margin-top: 8px;
 
     @media (min-width: $tablet-width) {
@@ -85,10 +86,12 @@
 
 .review-card__name {
   @include caption-big;
+
   margin: 0;
 }
 
 .review-card__info {
   @include caption-small;
+
   display: block;
 }

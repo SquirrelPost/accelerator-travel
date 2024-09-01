@@ -41,6 +41,7 @@
 
   h3 {
     @include h6;
+
     margin: 0;
     max-width: 249px;
 
@@ -55,10 +56,11 @@
 
   p {
     @include text-small;
+
     margin: 0;
   }
 
-  h3+p {
+  h3 + p {
     margin-top: 15px;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -66,7 +68,7 @@
     }
   }
 
-  p+p {
+  p + p {
     margin-top: 10px;
   }
 }

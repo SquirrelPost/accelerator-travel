@@ -17,6 +17,7 @@
 
   h4 {
     @include h7;
+
     margin: 0;
     padding-right: 24px;
     max-width: min-content;
@@ -24,6 +25,7 @@
 
   p {
     @include text-xsmall;
+
     margin: 0;
   }
 }

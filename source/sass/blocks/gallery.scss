@@ -14,6 +14,7 @@
 
 .gallery__text-wrapper {
   @include container;
+
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
@@ -28,6 +29,7 @@
 
   p {
     @include text-small;
+
     margin: 0;
 
     @media (min-width: $tablet-width) {
@@ -36,11 +38,12 @@
 
     @media (min-width: $desktop-width) {
       @include text-regular;
+
       max-width: 592px;
     }
   }
 
-  p+p {
+  p + p {
     margin-top: 10px;
   }
 
@@ -55,6 +58,7 @@
 
 .gallery__title {
   @include pseudo-title;
+
   margin: 0 0 26px;
   padding-top: 17px;
 

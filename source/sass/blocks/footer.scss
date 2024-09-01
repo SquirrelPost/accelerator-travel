@@ -4,6 +4,7 @@
 
 .footer__container {
   @include container;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,13 +57,13 @@
 .footer__list {
   @include list-reset;
   @include text-nav;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px 50px;
   text-align: center;
   margin-top: -2px;
-  width: 100%;
   width: 290px;
   max-height: 75px;
 
@@ -95,6 +96,7 @@
 
   @media (min-width: $desktop-width) {
     @include big-link-light-theme;
+
     display: flex;
     max-width: 145px;
     flex-shrink: 0;
@@ -103,6 +105,7 @@
 
 .footer__social {
   @include list-reset;
+
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -131,6 +134,7 @@
 .footer__privacy-policy {
   @include caption-small;
   @include nav-link-light-theme;
+
   display: inline-flex;
   margin-top: -2px;
 

@@ -101,17 +101,18 @@
     color: $base-active;
     background-color: $base-white;
   }
+}
 
-  &.swiper-button-disabled {
-    opacity: 1;
-    background-color: $color-disabled;
-    cursor: default;
-    pointer-events: none;
-  }
+.card-swiper__button.swiper-button-disabled {
+  opacity: 1;
+  background-color: $color-disabled;
+  cursor: default;
+  pointer-events: none;
 }
 
 .card-swiper__title {
   @include h3;
+
   margin: 4px 0 23px;
 
   @media (min-width: $tablet-width) {

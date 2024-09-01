@@ -14,7 +14,7 @@
     width: calc(50% - 19px);
     z-index: -1;
 
-    @media (resolution >=2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("../img/bg/clouds-1-mobile@2x.png");
     }
 
@@ -24,7 +24,7 @@
       width: calc(50% + 41px);
       background-image: url("../img/bg/clouds-1-tablet@1x.png");
 
-      @media (resolution >=2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../img/bg/clouds-1-tablet@2x.png");
       }
     }
@@ -34,7 +34,7 @@
       width: calc(50% - 118px);
       background-image: url("../img/bg/clouds-1-desktop@1x.png");
 
-      @media (resolution >=2dppx) {
+      @media (resolution >= 2dppx) {
         background-image: url("../img/bg/clouds-1-desktop@2x.png");
       }
     }

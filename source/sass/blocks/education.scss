@@ -1,5 +1,6 @@
 .education__title {
   @include h5;
+
   margin: 0 0 24px;
 
   @media (min-width: $tablet-width) {
@@ -13,6 +14,7 @@
 
 .education__list {
   @include list-reset;
+
   position: relative;
   padding-left: 29px;
   display: grid;

@@ -7,7 +7,7 @@
     }
   }
 
-  p+p {
+  p + p {
     margin-top: 10px;
   }
 }
@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     @include container;
+
     padding-top: 100px;
     padding-bottom: 95px;
     flex-direction: row;
@@ -36,6 +37,7 @@
 
 .contacts__title {
   @include pseudo-title;
+
   margin: 0 0 28px;
 
   @media (min-width: $tablet-width) {
@@ -55,6 +57,7 @@
 
 .contacts__list {
   @include list-reset;
+
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -110,6 +113,7 @@
 
 .contacts__item-title {
   @include h6;
+
   margin: 0 0 6px;
 
   @media (min-width: $tablet-width) {
@@ -119,6 +123,7 @@
 
 .contacts__link {
   @include nav-link-light-theme;
+
   display: inline-flex;
   color: inherit;
   text-decoration: none;
