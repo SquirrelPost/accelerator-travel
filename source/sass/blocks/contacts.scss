@@ -1,18 +1,4 @@
 .contacts {
-  p {
-    margin: 0;
-
-    @media (min-width: $tablet-width) {
-      max-width: 570px;
-    }
-  }
-
-  p + p {
-    margin-top: 10px;
-  }
-}
-
-.contacts__wrapper {
   padding-top: 21px;
   padding-bottom: 20px;
   display: flex;
@@ -32,6 +18,18 @@
     padding-bottom: 95px;
     flex-direction: row;
     align-items: center;
+  }
+
+  p {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      max-width: 570px;
+    }
+  }
+
+  p+p {
+    margin-top: 10px;
   }
 }
 
