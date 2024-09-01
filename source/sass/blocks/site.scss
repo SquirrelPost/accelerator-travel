@@ -24,41 +24,11 @@
 }
 
 .site__link {
-  border: 1px solid transparent;
-  padding: 2px 4px;
-
-  &[href]:hover {
-    border-bottom-color: $base-primary;
-  }
-
-  &[href]:active {
-    color: $base-secondary;
-    border-bottom-color: transparent;
-  }
-
-  &[href]:focus-visible {
-    border-color: $base-primary;
-    outline: none;
-  }
-
-  &--dark-theme {
-    &[href]:hover {
-      border-bottom-color: $base-white;
-    }
-
-    &[href]:active {
-      color: $base-active;
-      border-bottom-color: transparent;
-    }
-
-    &[href]:focus-visible {
-      border-color: $base-white;
-    }
-  }
+  @include nav-link-dark-theme;
 }
 
 .site__link.disabled {
-  pointer-events: none;
-  cursor: default;
-  color: $color-disabled;
+pointer-events: none;
+cursor: default;
+color: $color-disabled;
 }

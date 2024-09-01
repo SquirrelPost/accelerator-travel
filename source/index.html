@@ -19,7 +19,9 @@
   <header class="header" data-test="header">
     <div class="header__container">
       <a class="header__logo logo">
-        <img class="logo__icon" src="img/logo.svg" width="142" height="42" alt="Иконка логотипа.">
+        <svg class="logo__icon" role="img" aria-label="Иконка логотипа." width="142" height="42">
+          <use href="/__spritemap#sprite-logo"></use>
+        </svg>
       </a>
       <nav class="header__nav main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
@@ -35,38 +37,38 @@
         </button>
         <ul class="main-nav__list site">
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#tours">
+            <a class="site__link" href="#tours">
               <span class="site__text">Туры</span>
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#training">
+            <a class="site__link" href="#training">
               <span class="site__text">Обучение</span>
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#about">
+            <a class="site__link" href="#about">
               <span class="site__text">О нас</span>
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#reviews">
+            <a class="site__link" href="#reviews">
               <span class="site__text">Отзывы</span>
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#gallery">
+            <a class="site__link" href="#gallery">
               <span class="site__text">Фотографии</span>
             </a>
           </li>
           <li class="main-nav__list-item site__item">
-            <a class="site__link site__link--dark-theme" href="#contacts">
+            <a class="site__link" href="#contacts">
               <span class="site__text">Контакты</span>
             </a>
           </li>
         </ul>
       </nav>
-      <a class="header__phone link link--dark-theme" href="tel:+78000000000">8 800 000-00-00</a>
+      <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
     </div>
   </header>
 
@@ -396,7 +398,7 @@
                   </picture>
                   <h4>Александр Прокофьев</h4>
                   <p>Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек. Любит&nbsp;природу.</p>
-                  <a class="training-card__link" href="#">
+                  <a class="training-card__link social-link" href="#">
                     <span class="visually-hidden">Александр Прокофьев ВКонтакте</span>
                     <svg class="training-card__link-icon" aria-hidden="true" focusable="false" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -415,7 +417,7 @@
                   <h4>Светлана Афиногенова</h4>
                   <p>Видеть мир&nbsp;вокруг, познавать его&nbsp;опасности, находить друг&nbsp;друга, становиться ближе,
                     чувствовать — в&nbsp;этом назначение&nbsp;жизни.</p>
-                  <a class="training-card__link" href="#">
+                  <a class="training-card__link social-link" href="#">
                     <span class="visually-hidden">Светлана Афиногенова ВКонтакте</span>
                     <svg class="training-card__link-icon" aria-hidden="true" focusable="false" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -434,7 +436,7 @@
                   <h4>Надежда Колесниченко</h4>
                   <p>Участники говорят, что&nbsp;Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках
                     с&nbsp;ней&nbsp;чувствуешь себя спокойно&nbsp;и&nbsp;уверенно.</p>
-                  <a class="training-card__link" href="#">
+                  <a class="training-card__link social-link" href="#">
                     <span class="visually-hidden">Надежда Колесниченко ВКонтакте</span>
                     <svg class="training-card__link-icon" aria-hidden="true" focusable="false" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -453,7 +455,7 @@
                   <h4>Федор Кайгородов</h4>
                   <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных
                     районах Хибины, Архыз, много путешествует по Европе.</p>
-                  <a class="training-card__link" href="#">
+                  <a class="training-card__link social-link" href="#">
                     <span class="visually-hidden">Федор Кайгородов ВКонтакте</span>
                     <svg class="training-card__link-icon" aria-hidden="true" focusable="false" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -471,7 +473,7 @@
                   </picture>
                   <h4>Даниэль Васнецов</h4>
                   <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
-                  <a class="training-card__link" href="#">
+                  <a class="training-card__link social-link" href="#">
                     <span class="visually-hidden">Даниэль Васнецов ВКонтакте</span>
                     <svg class="training-card__link-icon" aria-hidden="true" focusable="false" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -1066,13 +1068,15 @@
         <p>Заполните форму и&nbsp;наш&nbsp;оператор свяжется с&nbsp;вами&nbsp;для&nbsp;консультации.</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post" novalidate>
           <div class="form__wrapper">
-            <input class="form__field" type="tel" id="phone" name="phone" placeholder="+7 (000)-000-00-00" value="" required>
+            <input class="form__field" type="tel" id="phone" name="phone" placeholder="+7 (000)-000-00-00" value=""
+              required>
             <label class="form__label" for="phone">
               <span class="form__label-text">Телефон</span>
             </label>
           </div>
           <div class="form__wrapper">
-            <input class="form__field" type="text" id="email" name="email" placeholder="example@mail.ru" value="" required>
+            <input class="form__field" type="text" id="email" name="email" placeholder="example@mail.ru" value=""
+              required>
             <label class="form__label" for="email">
               <span class="form__label-text">Email</span>
             </label>
@@ -1085,8 +1089,128 @@
     </section>
   </main>
 
-  <footer class="footer" data-test="footer">
-
+  <footer data-test="footer">
+    <section class="contacts" id="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__text-wrapper">
+          <h2 class="contacts__title" data-title="Контакты">Контакты</h2>
+          <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас&nbsp;способом или&nbsp;приходите
+            к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать
+            для&nbsp;вас&nbsp;тур.</p>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <h3 class="contacts__item-title">Телефон</h3>
+              <a class="contacts__link" href="tel:+79837454545">
+                <span class="contacts__link-text">+7 983 745-45-45</span>
+              </a>
+            </li>
+            <li class="contacts__item contacts__item--mail">
+              <h3 class="contacts__item-title">Email</h3>
+              <a class="contacts__link" href="mailto:info@lifetour.com">
+                <span class="contacts__item-text">info@lifetour.com</span>
+              </a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <h3 class="contacts__item-title">Адрес</h3>
+              <address class="contacts__address">
+                <p>г.&nbsp;Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
+              </address>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map-wrapper">
+          <a class="contacts__map" href="https://goo.gl/maps/xkeKveTV7hhoyvQk6">
+            <picture>
+              <source type="image/webp" width="600" height="324" media="(min-width: 1440px)"
+                srcset="img/map/map-desktop@1x.webp 1x, img/map/map-desktop@2x.webp 2x">
+              <source type="image/webp" width="768" height="340" media="(min-width: 768px)"
+                srcset="img/map/map-tablet@1x.webp 1x, img/map/map-tablet@2x.webp 2x">
+              <source type="image/webp" width="320" height="343"
+                srcset="img/map/map-mobile@1x.webp 1x, img/map/map-mobile@2x.webp 2x">
+              <source type="image/jpeg" width="600" height="324" media="(min-width: 1440px)"
+                srcset="img/map/map-desktop@1x.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+              <source type="image/jpeg" width="768" height="340" media="(min-width: 768px)"
+                srcset="img/map/map-tablet@1x.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+              <img class="contacts__map-image" src="img/map/map-mobile@1x.jpg" width="320" height="343"
+                srcset="img/map/map-mobile@2x.jpg 2x" alt="Изображение карты c адресом офиса Lifetour.">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="footer__container">
+        <div class="footer__line">
+          <a class="footer__logo logo">
+            <svg class="logo__icon" role="img" aria-label="Иконка логотипа." width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#tours">
+                <span class="footer__link-text">Туры</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#training">
+                <span class="footer__link-text">Обучение</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#about">
+                <span class="footer__link-text">О нас</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#reviews">
+                <span class="footer__link-text">Отзывы</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#gallery">
+                <span class="footer__link-text">Фотографии</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#contacts">
+                <span class="footer__link-text">Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+        </div>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link" href="#">
+              <span class="visually-hidden">Мы ВКонтакте.</span>
+              <svg class="social-link__icon" aria-hidden="true" focusable="false" width="17" height="9">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link" href="#">
+              <span class="visually-hidden">Мы в Одноклассниках.</span>
+              <svg class="social-link__icon" aria-hidden="true" focusable="false" width="10" height="16">
+                <use href="/__spritemap#sprite-odnoklassniki"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link social-link" href="#">
+              <span class="visually-hidden">Мы на Реддит.</span>
+              <svg class="social-link__icon" aria-hidden="true" focusable="false" width="15" height="15">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__privacy-policy" href="#">
+          <span>Политика конфиденциальности</span>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="js/main.js"></script>

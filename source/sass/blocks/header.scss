@@ -46,6 +46,10 @@
     padding-left: 32px;
     padding-right: 31px;
   }
+
+  svg {
+    color: $base-white;
+  }
 }
 
 .header__nav {
@@ -61,7 +65,7 @@
 }
 
 .header__phone {
-  @include h6;
+  @include big-link-dark-theme;
 
   justify-self: end;
   margin-top: 3px;
@@ -76,4 +80,10 @@
     margin-top: 1px;
     align-self: center;
   }
+}
+
+.header__phone.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $color-disabled;
 }

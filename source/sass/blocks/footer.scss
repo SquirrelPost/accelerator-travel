@@ -1,0 +1,140 @@
+.footer {
+  border-top: 1px solid $primary-opacity-20;
+}
+
+.footer__container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  padding-top: 23px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    gap: 22px;
+  }
+}
+
+.footer__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 678px;
+    width: 100%;
+    gap: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    justify-content: space-between;
+    gap: 110px;
+  }
+}
+
+.footer__logo {
+  svg {
+    color: $base-primary;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 29px;
+  }
+}
+
+.footer__list {
+  @include list-reset;
+  @include text-nav;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px 50px;
+  text-align: center;
+  margin-top: -2px;
+  width: 100%;
+  width: 290px;
+  max-height: 75px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 14px;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 22px;
+  }
+}
+
+.footer__item {
+  width: 120px;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.footer__link {
+  @include nav-link-light-theme;
+}
+
+.footer__phone {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    @include big-link-light-theme;
+    display: flex;
+    max-width: 145px;
+    flex-shrink: 0;
+  }
+}
+
+.footer__social {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 290px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 15px;
+  }
+}
+
+.footer__social-link {
+  width: 32px;
+  height: 30px;
+
+  @media (min-width: $desktop-width) {
+    width: 30px;
+  }
+}
+
+.footer__privacy-policy {
+  @include caption-small;
+  @include nav-link-light-theme;
+  display: inline-flex;
+  margin-top: -2px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+  }
+}

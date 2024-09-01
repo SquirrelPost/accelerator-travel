@@ -219,3 +219,85 @@
     padding-top: 24px;
   }
 }
+
+@mixin nav-link-light-theme {
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 2px 4px;
+
+  &[href]:hover {
+    border-bottom-color: $base-primary;
+  }
+
+  &[href]:active {
+    color: $base-secondary;
+    border-bottom-color: transparent;
+  }
+
+  &[href]:focus-visible {
+    border-color: $base-primary;
+    outline: none;
+  }
+}
+
+@mixin nav-link-dark-theme {
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 2px 4px;
+
+  &[href]:hover {
+    border-bottom-color: $base-white;
+  }
+
+  &[href]:active {
+    color: $base-active;
+    border-bottom-color: transparent;
+  }
+
+  &[href]:focus-visible {
+    border-color: $base-white;
+    outline: none;
+  }
+}
+
+@mixin big-link-light-theme {
+  @include h6;
+  color: inherit;
+  text-decoration: none;
+
+  color: $base-primary;
+
+  &[href]:hover {
+    color: $secondary-opacity-10;
+  }
+
+  &[href]:focus-visible {
+    color: $base-secondary;
+  }
+
+  &[href]:active {
+    color: $base-active;
+  }
+}
+
+@mixin big-link-dark-theme {
+  @include h6;
+  color: inherit;
+  text-decoration: none;
+
+  color: $base-white;
+
+  &[href]:hover {
+    color: $white-opacity;
+  }
+
+  &[href]:focus-visible {
+    color: $base-primary;
+  }
+
+  &[href]:active {
+    color: $base-active;
+  }
+}

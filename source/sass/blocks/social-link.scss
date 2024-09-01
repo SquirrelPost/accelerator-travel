@@ -1,0 +1,30 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid $primary-opacity-30;
+  color: $base-primary;
+
+  &:hover {
+    border-color: $base-primary;
+  }
+
+  &:focus {
+    border-color: transparent;
+    background-color: $base-white;
+  }
+
+  &:active {
+    border-color: transparent;
+    background-color: $base-secondary;
+    color: $base-white;
+  }
+}
+
+.social-link.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: $primary-opacity-30;
+  border-color: $primary-opacity-30;
+}
