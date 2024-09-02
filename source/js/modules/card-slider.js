@@ -1,6 +1,4 @@
 import Swiper from 'swiper';
-
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 const cardSwipers = document.querySelectorAll('.card-swiper__slider');
@@ -42,7 +40,6 @@ const createCardSwipers = () => {
       loop: false,
       slidesPerView: 1,
       initialSlide: 0,
-      modules: [Navigation],
       navigation: {
         nextEl: SliderVariables[variableId]['navButtonNext'],
         prevEl: SliderVariables[variableId]['navButtonPrev'],

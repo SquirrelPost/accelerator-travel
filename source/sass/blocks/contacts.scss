@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
@@ -71,7 +71,7 @@
   @media (min-width: $desktop-width) {
     margin-top: 50px;
     flex-direction: column;
-    gap: 35px;
+    gap: 33px;
   }
 }
 
@@ -140,6 +140,12 @@
 
   @media (min-width: $tablet-width) {
     max-width: fit-content;
+    margin-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-top: 8px;
   }
 }
 

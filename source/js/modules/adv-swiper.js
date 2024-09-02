@@ -1,6 +1,4 @@
 import Swiper from 'swiper';
-
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 const createAdvSwiper = () => {
@@ -15,7 +13,6 @@ const createAdvSwiper = () => {
         slidesPerGroup: 2,
         centeredSlides: true,
         spaceBetween: 30,
-        modules: [Navigation],
         navigation: {
           nextEl: '.adv-swiper__button--next',
           prevEl: '.adv-swiper__button--prev',

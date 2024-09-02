@@ -1,6 +1,4 @@
 import Swiper from 'swiper';
-
-import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 const createPhotoSwiper = () => {
@@ -10,7 +8,6 @@ const createPhotoSwiper = () => {
     initialSlide: 0,
     slidesPerView: 2,
     spaceBetween: 6,
-    modules: [Navigation],
     navigation: {
       nextEl: '.photo-swiper__button--next',
       prevEl: '.photo-swiper__button--prev',
