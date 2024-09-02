@@ -7,11 +7,11 @@
   background-color: $color-grey;
 
   @media (min-width: $tablet-width) {
-    max-width: 330px;
+    min-width: 330px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 380px;
+    min-width: 380px;
   }
 
   &::before {
